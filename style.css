@@ -212,4 +212,12 @@ ul li a:link, a:visited {
   background: rgba(255, 255, 255,.65);
   color: black;
   padding: 2em;
+  margin: 1em;
+}
+
+#home {
+  margin-top: 25px;
+  margin-bottom: 5px;
+  text-align: center;
+  color: white;
 }
