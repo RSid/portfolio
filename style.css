@@ -15,9 +15,10 @@ body {
 
 .column-container {
   height: auto;
-  width: 100%;
+  width: 96%;
   min-width: 600px;
   padding-top: 10px;
+  padding: 2%;
   background: rgba(255, 255, 255,.65);
   overflow: auto;
 }
@@ -29,16 +30,19 @@ body {
 }
 
 #left {
-  float: left; width: 29%;
+  float: left;
+  width: 29%;
 }
 
 #right {
-  float: right; width: 29%;
+  float: right;
+  width: 29%;
+  margin-right: 2%;
 }
 
 #center {
   margin-left: 3%;
-  margin-right: 3%;
+  margin-right: 2%;
   display: inline-block; width: 29%;
 }
 
@@ -46,6 +50,10 @@ body {
   text-align: center;
   padding-top: 15px;
   padding-bottom: 20px;
+}
+
+#intro a {
+  text-decoration: none;
 }
 
 ul li {
@@ -59,7 +67,7 @@ ul li a:link, a:visited {
 
 #footer{
   width: 100%;
-  margin-top: 150px;
+  margin-top: 50px;
   text-align: center;
   color: white;
 }
@@ -68,13 +76,21 @@ ul li a:link, a:visited {
   padding: 50px;
   list-style: none;
   display: inline;
+  width: 100%;
 }
 
 #connect li {
   display: inline;
-  padding: 5px;
+  padding: 10px;
   border: 1px solid black;
   background: rgba(255, 255, 255,.5);
+  border-radius: 8px;
+  width: 200px;
+  cursor: pointer;
+}
+
+#connect li:hover {
+  background: rgba(255, 255, 255,.4);
 }
 
 /* face */
@@ -166,8 +182,6 @@ ul li a:link, a:visited {
   width:0px;
 }
 
-/* resume */
-
 #speech-bubble {
   display: inline-block;
   color: white;
@@ -220,4 +234,83 @@ ul li a:link, a:visited {
   margin-bottom: 5px;
   text-align: center;
   color: white;
+}
+
+/*dropdown menus*/
+
+.container {
+  text-align: center;
+}
+
+.dropdown-container {
+  display: inline;
+  width: 96%;
+  padding: 2%;
+  list-style: none;
+  text-align: center;
+}
+
+#home-menu > a > li{
+  margin: 5%;
+  padding: 2%;
+  width: 100px;
+}
+
+#home-menu > a {
+  text-decoration: none;
+}
+
+.dropdown-container li {
+  display: inline-block;
+  position: relative;
+  padding: 15px 20px;
+  background: rgba(255, 255, 255,.65);
+  cursor: pointer;
+  border: 6px solid #121222;
+  border-radius: 50px;
+  margin: 1%;
+}
+
+.two-column >.dropdown-container li {
+  width: 30%;
+}
+
+.sub-header {
+  font-size: 1.5em;
+}
+
+.dropdown-container li:hover {
+  background: rgba(255, 255, 255,.40);
+}
+
+.dropdown-container > li > ul {
+  padding: 0;
+  position: absolute;
+  top: 48px;
+  left: 1%;
+  width: 250%;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.dropdown-container > li > ul > li {
+  display: block;
+  margin-left: 2.5%;
+  margin-top: 1%;
+}
+
+.dropdown-container > li > ul > li:hover {
+  background: rgba(255, 255, 255,.40);
+}
+
+.dropdown-container > li:hover > ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+ul .type-title {
+  border-radius: 50px;
+  font-size: 1.0em;
 }
