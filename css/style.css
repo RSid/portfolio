@@ -210,6 +210,10 @@ ul li a:link, a:visited {
   width: 0;
 }
 
+#speech-bubble > a:hover {
+  font-weight: bold;
+}
+
 /*resume*/
 
 #content {
