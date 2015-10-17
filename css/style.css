@@ -212,6 +212,7 @@ ul li a:link, a:visited {
 
 #speech-bubble > a:hover {
   font-weight: bold;
+  text-decoration: none;
 }
 
 /*resume*/
