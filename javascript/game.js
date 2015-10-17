@@ -15,8 +15,8 @@ for (i = 0; i < COLORS.length; i ++) {
   balls.push(new Ball(Math.floor((Math.random() * CANVAS_WIDTH) + 0),
   Math.floor((Math.random() * CANVAS_HEIGHT) + 0),
   Math.floor((Math.random() * 20) + 5),COLORS[i],
-  Math.floor((Math.random() * 10) + 1),
-  Math.floor((Math.random() * 10) + 1)));
+  Math.floor((Math.random() * 6) + 1),
+  Math.floor((Math.random() * 6) + 1)));
 }
 
 var ctx;
@@ -64,16 +64,17 @@ function collision(ball1, ball2) {
      var newB1dx = ball2.dx;
      var newB1dy = ball2.dy;
 
+     ball1.x = ball1.x + newB1dx
+     ball1.y = ball1.y + newB1dy
+     ball2.x = ball2.x + newB2dx
+     ball2.y = ball2.y + newB2dy
+
      ball1.dx = newB1dx;
      ball1.dy = newB1dy;
 
      ball2.dx = newB2dx;
      ball2.dy = newB2dy;
 
-     ball1.x = ball1.x + newB1dx
-     ball1.y = ball1.y + newB1dy
-     ball2.x = ball2.x + newB2dx
-     ball2.y = ball2.y + newB2dy
    }
 }
 
