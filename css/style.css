@@ -231,6 +231,17 @@ ul li a:link, a:visited {
   color: white;
 }
 
+#resume-header {
+  display: inline;
+}
+
+.line {
+  height: 2px;
+  width: 100%;
+  background-color: grey;
+  margin-top: 10px;
+}
+
 /*dropdown menus*/
 
 .container {
