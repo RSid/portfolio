@@ -1,0 +1,13 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+// Your variable overrides
+$body-bg: #1A0F17; //dark purp
+$body-color: #D1FFC6;
+$bg-primary: #2C6E49;
+
+$theme-colors: (
+  "primary": #1B9AAA,
+  "danger": #ff4136
+);
+
+@import "node_modules/bootstrap/scss/bootstrap";
