@@ -3,6 +3,8 @@ import './App.css';
 import React, { Component } from "react";
 import Freelance from "./Freelance";
 import Weirdcore from "./Weirdcore";
+import Games from "./Games";
+import Writing from "./Writing";
 import Button from 'react-bootstrap/Button';
 import Image from 'react-bootstrap/Image'
 import Container from 'react-bootstrap/Container'
@@ -14,8 +16,14 @@ class App extends Component {
     super();
     this.state = {
       name: "React",
-      showHideFreelance: false,
-      showHideWeirdcore: false
+      showHideFreelanceSubsections: false,
+      showHideWeirdcoreSubsections: false,
+      showHideGamesSubsections: false,
+      showHideWritingSubsections: false,
+      showWritingSection: true,
+      showGamesSection: true,
+      showCodeSection: true,
+      showWeirdcoreSection: true
     };
     this.hideComponent = this.hideComponent.bind(this);
   }
@@ -23,17 +31,43 @@ class App extends Component {
   hideComponent(name) {
     console.log(name);
     switch (name) {
-      case "showHideFreelance":
-        this.setState({ showHideFreelance: !this.state.showHideFreelance });
+      case "showHideFreelanceSubsections":
+        this.setState({ showHideFreelanceSubsections: !this.state.showHideFreelanceSubsections });
+        this.setState({ showWritingSection: this.state.showHideFreelanceSubsections });
+        this.setState({ showGamesSection: this.state.showHideWeirdcoreSubsections });
+        this.setState({ showWeirdcoreSection: this.state.showHideFreelanceSubsections });
         break;
-      case "showHideWeirdcore":
-        this.setState({ showHideWeirdcore: !this.state.showHideWeirdcore });
+      case "showHideWeirdcoreSubsections":
+        this.setState({ showHideWeirdcoreSubsections: !this.state.showHideWeirdcoreSubsections });
+        this.setState({ showWritingSection: this.state.showHideWeirdcoreSubsections });
+        this.setState({ showGamesSection: this.state.showHideWeirdcoreSubsections });
+        this.setState({ showCodeSection: this.state.showHideWeirdcoreSubsections });
+        break;
+    case "showHideGamesSubsections":
+      this.setState({ showHideGamesSubsections: !this.state.showHideGamesSubsections });
+      this.setState({ showWritingSection: this.state.showHideGamesSubsections });
+      this.setState({ showWeirdcoreSection: this.state.showHideGamesSubsections });
+      this.setState({ showCodeSection: this.state.showHideGamesSubsections });
+      break;
+    case "showHideWritingSubsections":
+        this.setState({ showHideWritingSubsections: !this.state.showHideWritingSubsections });
+        this.setState({ showGamesSection: this.state.showHideWritingSubsections });
+        this.setState({ showWeirdcoreSection: this.state.showHideWritingSubsections });
+        this.setState({ showCodeSection: this.state.showHideWritingSubsections });
         break;
     }
   }
 
   render() {
-   const { showHideFreelance, showHideWeirdcore } = this.state;
+   const { showHideFreelanceSubsections,
+       showHideWeirdcoreSubsections,
+       showHideGamesSubsections,
+       showHideWritingSubsections,
+       showWritingSection,
+       showGamesSection,
+       showCodeSection,
+       showWeirdcoreSection } = this.state;
+
    return (
      <div className="App">
      <Container fluid>
@@ -55,8 +89,6 @@ class App extends Component {
         <Col>
         </Col>
       </Row>
-
-
           <Row>
             <Col>
             </Col>
@@ -67,36 +99,44 @@ class App extends Component {
             </Col>
           </Row>
           <Row>
-           <Col>
+           { showWritingSection && <Col>
              <div>
-              I want to see your writing!
+              I want to see
+              <Button variant="link" onClick={() => this.hideComponent("showHideWritingSubsections")}>
+               { showHideWritingSubsections? "something else" : "your creative writing!" }
+             </Button>
              </div>
-           </Col>
-           <Col>
+             { showHideWritingSubsections && <Writing /> }
+           </Col> }
+           { showWeirdcoreSection && <Col>
              <div>
-              I want to see your
-               <Button variant="link" onClick={() => this.hideComponent("showHideWeirdcore")}>
-                weird art!
+              I want to see
+               <Button variant="link" onClick={() => this.hideComponent("showHideWeirdcoreSubsections")}>
+                { showHideWeirdcoreSubsections? "something else" : "your weird art!" }
               </Button>
              </div>
 
-             {showHideWeirdcore && <Weirdcore />}
-           </Col>
-           <Col>
+             { showHideWeirdcoreSubsections && <Weirdcore /> }
+           </Col> }
+           { showGamesSection && <Col>
              <div>
-              I want to see your games!
+              I want to see
+              <Button variant="link" onClick={() => this.hideComponent("showHideGamesSubsections")}>
+               { showHideGamesSubsections? "something else" : "your games!" }
+             </Button>
+              { showHideGamesSubsections && <Games /> }
              </div>
-           </Col>
-           <Col>
+           </Col> }
+          { showCodeSection && <Col>
            <div>
              I want to see your code!
-             <Button onClick={() => this.hideComponent("showHideFreelance")} variant="link">
+             <Button onClick={() => this.hideComponent("showHideFreelanceSubsections")} variant="link">
               Looking for a freelance web developer?
             </Button>
            </div>
 
-           {showHideFreelance && <Freelance />}
-           </Col>
+           {showHideFreelanceSubsections && <Freelance />}
+           </Col> }
           </Row>
 
        </Container>
