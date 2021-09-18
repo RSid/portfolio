@@ -33,13 +33,13 @@ class Weirdcore extends React.Component {
     return (
       <div className="weirdcore">
          <div>
-            <h3 class="App-subheader">
+            <h3 className="App-subheader">
                 <Button variant="link" onClick={() => this.hideComponent("showHideGenerative")}>
                     Generative art
                 </Button>
             </h3>
             { showHideGenerative && <GenerativeArt /> }
-            <h3 class="App-subheader">
+            <h3 className="App-subheader">
                 <Button variant="link" onClick={() => this.hideComponent("showHideGAN")}>
                     Fun with GANs
                 </Button>

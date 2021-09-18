@@ -29,12 +29,11 @@ class App extends Component {
   }
 
   hideComponent(name) {
-    console.log(name);
     switch (name) {
       case "showHideFreelanceSubsections":
         this.setState({ showHideFreelanceSubsections: !this.state.showHideFreelanceSubsections });
         this.setState({ showWritingSection: this.state.showHideFreelanceSubsections });
-        this.setState({ showGamesSection: this.state.showHideWeirdcoreSubsections });
+        this.setState({ showGamesSection: this.state.showHideFreelanceSubsections });
         this.setState({ showWeirdcoreSection: this.state.showHideFreelanceSubsections });
         break;
       case "showHideWeirdcoreSubsections":
@@ -70,75 +69,72 @@ class App extends Component {
 
    return (
      <div className="App">
-     <Container fluid>
-      <Row>
-        <Col>
-        </Col>
-        <Col>
-         <Image roundedCircle src={logocat} className="logocat" alt="logocat" />
-        </Col>
-        <Col>
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-        </Col>
-        <Col>
-          <h1 class="dusty-pink">Alla likes making stuff.</h1>
-        </Col>
-        <Col>
-        </Col>
-      </Row>
-          <Row>
-            <Col>
-            </Col>
-            <Col>
-              <h2> What do you want to see? </h2>
-            </Col>
-            <Col>
-            </Col>
-          </Row>
-          <Row>
-           { showWritingSection && <Col>
-             <div>
-              I want to see
-              <Button variant="link" onClick={() => this.hideComponent("showHideWritingSubsections")}>
-               { showHideWritingSubsections? "something else" : "your creative writing!" }
-             </Button>
-             </div>
-             { showHideWritingSubsections && <Writing /> }
-           </Col> }
-           { showWeirdcoreSection && <Col>
-             <div>
-              I want to see
-               <Button variant="link" onClick={() => this.hideComponent("showHideWeirdcoreSubsections")}>
-                { showHideWeirdcoreSubsections? "something else" : "your weird art!" }
-              </Button>
-             </div>
+       <Container fluid>
+        <Row>
+           <Col>
+           </Col>
+           <Col>
+             <h1>Alla likes making stuff.</h1>
+           </Col>
+           <Col>
+           </Col>
+        </Row>
 
-             { showHideWeirdcoreSubsections && <Weirdcore /> }
-           </Col> }
-           { showGamesSection && <Col>
-             <div>
-              I want to see
-              <Button variant="link" onClick={() => this.hideComponent("showHideGamesSubsections")}>
-               { showHideGamesSubsections? "something else" : "your games!" }
-             </Button>
-              { showHideGamesSubsections && <Games /> }
-             </div>
-           </Col> }
-          { showCodeSection && <Col>
+        <Row>
+          <Col>
+          </Col>
+          <Col xs={8}>
+          <div className="speech-bubble-right inline-block teal">
+           Hi. What do you want to see?
+          </div>
+           <Image roundedCircle src={logocat} className="logocat padding-5p" alt="logocat" />
+          </Col>
+          <Col>
+          </Col>
+        </Row>
+
+        <Row>
+         { showWritingSection && <Col>
            <div>
-             I want to see your code!
-             <Button onClick={() => this.hideComponent("showHideFreelanceSubsections")} variant="link">
-              Looking for a freelance web developer?
+            I want to see
+            <Button variant="link" onClick={() => this.hideComponent("showHideWritingSubsections")} className="standard-btn-overrides">
+             { showHideWritingSubsections? "something else" : "your creative writing!" }
+           </Button>
+           </div>
+           { showHideWritingSubsections && <Writing /> }
+         </Col> }
+         { showWeirdcoreSection && <Col>
+           <div>
+            I want to see
+             <Button variant="link" onClick={() => this.hideComponent("showHideWeirdcoreSubsections")} className="standard-btn-overrides">
+              { showHideWeirdcoreSubsections? "something else" : "your weird art!" }
             </Button>
            </div>
 
-           {showHideFreelanceSubsections && <Freelance />}
-           </Col> }
-          </Row>
-
+           { showHideWeirdcoreSubsections && <Weirdcore /> }
+         </Col> }
+         { showGamesSection && <Col>
+           <div>
+            I want to see
+            <Button variant="link" onClick={() => this.hideComponent("showHideGamesSubsections")} className="standard-btn-overrides">
+             { showHideGamesSubsections? "something else" : "your games!" }
+           </Button>
+            { showHideGamesSubsections && <Games /> }
+           </div>
+         </Col> }
+        </Row>
+        <Row>
+          <Col>
+          </Col>
+          <Col>
+            <Button onClick={() => this.hideComponent("showHideFreelanceSubsections")} variant="link">
+               { showHideFreelanceSubsections? "Show me some other things you do." : "Looking for a freelance web developer?" }
+            </Button>
+            {showHideFreelanceSubsections && <Freelance />}
+          </Col>
+          <Col>
+          </Col>
+        </Row>
        </Container>
      </div>
    );
