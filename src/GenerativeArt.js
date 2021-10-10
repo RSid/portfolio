@@ -40,7 +40,8 @@ class GenerativeArt extends React.Component {
         return(
             <div>
                 <Sketch setup={setup} draw={draw} />
-                A sketch written in p5.js.
+                A sketch written in p5.js. p5/Processing are great tools for artists to experiment in code. <br/>
+                Check out some more doodles <a href="https://openprocessing.org/user/29228?view=sketches" target="_blank" rel="noopener noreferrer"> here </a> if you like!
             </div>
         )
     }
