@@ -60,6 +60,10 @@
   padding-bottom: 1%;
 }
 
+.padding-10p-top {
+    padding-top: 10%;
+}
+
 .padding-5p {
   padding: 5%;
 }
@@ -74,6 +78,10 @@
 
 .inline-block {
   display: inline-block;
+}
+
+.maxrem--7 {
+    max-width: 7rem;
 }
 
 .text-align-left {
@@ -93,6 +101,12 @@
 
 .border-bottom-white {
   border-bottom: 1px solid white;
+}
+
+.image-side-text {
+    text-align: left;
+    padding-top: 5%;
+    padding-left: 4%;
 }
 
 .speech-bubble-right {

@@ -16,34 +16,34 @@ class Games extends React.Component {
             <Col xs={6}>
                 <Row>
                     <Image src={unsunglogo} />
-                </Row>
-                <Row>
+                    <span className="image-side-text">
                     Contributed content, art, and playtesting to Peter Borah's
                     <a href="http://www.unsungtales.com/" target="_blank" rel="noopener noreferrer" className="margin-left-1p">
                         Unsung Tales.
                     </a>
+                    </span>
                 </Row>
             </Col>
             <Col>
             </Col>
         </Row>
-        <Row>
+        <Row className="padding-1p-top-bottom">
             <Col>
             </Col>
             <Col xs={6}>
                 <Row>
-                    <Image src={yokohama} />
-                </Row>
-                <Row>
-                    Fiasco Playset for <a href="http://fiascoplaysets.com/home/yokohama-1865"  target="_blank" rel="noopener noreferrer"  className="margin-left-1p">
+                    <Image src={yokohama} roundedCircle className="maxrem--7" />
+                    <span className="image-side-text">
+                    Fiasco Playset for <a href="http://fiascoplaysets.com/home/yokohama-1865"  target="_blank" rel="noopener noreferrer">
                         Yokohama 1865.
                     </a>
+                    </span>
                 </Row>
             </Col>
             <Col>
             </Col>
         </Row>
-        <Row>
+        <Row className="padding-1p-top-bottom">
             <Col>
             </Col>
             <Col xs={6}>

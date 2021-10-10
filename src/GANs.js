@@ -37,9 +37,6 @@ class GANs extends React.Component {
             <Col>
               <Card style={{ width: '11rem' }}>
                <Card.Img variant="top" src={bluecatcar} />
-               <Card.Body className="teal">
-                 <Card.Title>It's me, the star of the show!</Card.Title>
-               </Card.Body>
               </Card>
             </Col>
             <Col>
