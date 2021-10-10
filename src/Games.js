@@ -1,7 +1,7 @@
 import unsunglogo from './images/unsungLogo.png'
 import yokohama from './images/yokohama1865.png'
 import Image from 'react-bootstrap/Image'
-import React, { Component } from "react";
+import React from "react";
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 

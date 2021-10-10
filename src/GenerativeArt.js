@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Sketch from "react-p5";
 
 class GenerativeArt extends React.Component {
@@ -21,7 +21,7 @@ class GenerativeArt extends React.Component {
               p5.noFill();
               p5.beginShape();
               for( var i = 0; i <=totalDegrees; i++) {
-                if(i%2 == 0) {
+                if(i%2 === 0) {
                   var r = p5.random(0, 255);
                   p5.stroke(r, 100, 20, 25);
                 }

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Button from 'react-bootstrap/Button';
 import GANs from './GANs.js';
 import GenerativeArt from './GenerativeArt.js';
@@ -17,7 +17,6 @@ class Weirdcore extends React.Component {
     }
 
     hideComponent(name) {
-      console.log(name);
       switch (name) {
         case "showHideGenerative":
           this.setState({ showHideGenerative: !this.state.showHideGenerative });

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import bluecatcar from './images/bluecatcargan.png'
 import whitecat from './images/whitecat.png'
 import airbrushcat from './images/airbrushcat.png'
