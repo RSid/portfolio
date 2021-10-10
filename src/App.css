@@ -51,6 +51,10 @@
   padding-bottom: 5%;
 }
 
+.padding-1p-bottom {
+  padding-bottom: 1%;
+}
+
 .padding-1p-top-bottom {
   padding-top: 1%;
   padding-bottom: 1%;
@@ -64,12 +68,21 @@
   margin-left: 1%;
 }
 
+.margin-right-1p {
+  margin-right: 1%;
+}
+
 .inline-block {
   display: inline-block;
 }
 
 .text-align-left {
   text-align: left;
+}
+
+.small-italic {
+  font-size: .8em;
+  font-style: italic;;
 }
 
 .standard-btn-overrides {

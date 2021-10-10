@@ -123,11 +123,13 @@ class App extends Component {
            </div>
          </Col> }
         </Row>
+        <Row className="padding-1p-top-bottom">
+        </Row>
         <Row>
           <Col>
           </Col>
-          <Col>
-            <Button onClick={() => this.hideComponent("showHideFreelanceSubsections")} variant="link">
+          <Col xs={6}>
+            <Button onClick={() => this.hideComponent("showHideFreelanceSubsections")} variant="primary">
                { showHideFreelanceSubsections? "Show me some other things you do." : "Looking for a freelance web developer?" }
             </Button>
             {showHideFreelanceSubsections && <Freelance />}

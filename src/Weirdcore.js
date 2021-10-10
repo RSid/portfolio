@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import Button from 'react-bootstrap/Button';
 import GANs from './GANs.js';
 import GenerativeArt from './GenerativeArt.js';
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 
 class Weirdcore extends React.Component {
     constructor() {
@@ -32,20 +34,26 @@ class Weirdcore extends React.Component {
 
     return (
       <div className="weirdcore">
-         <div>
-            <h3 className="App-subheader">
-                <Button variant="link" onClick={() => this.hideComponent("showHideGenerative")}>
-                    Generative art
-                </Button>
-            </h3>
-            { showHideGenerative && <GenerativeArt /> }
-            <h3 className="App-subheader">
-                <Button variant="link" onClick={() => this.hideComponent("showHideGAN")}>
-                    Fun with GANs
-                </Button>
-            </h3>
-            { showHideGAN && <GANs /> }
-         </div>
+         <Row>
+             <Col>
+             </Col>
+             <Col xs={8}>
+                <h3 className="App-subheader">
+                    <Button variant="link" onClick={() => this.hideComponent("showHideGenerative")}>
+                        Generative art
+                    </Button>
+                </h3>
+                { showHideGenerative && <GenerativeArt /> }
+                <h3 className="App-subheader">
+                    <Button variant="link" onClick={() => this.hideComponent("showHideGAN")}>
+                        Fun with GANs
+                    </Button>
+                </h3>
+                { showHideGAN && <GANs /> }
+            </Col>
+            <Col>
+            </Col>
+         </Row>
       </div>
     );
   }

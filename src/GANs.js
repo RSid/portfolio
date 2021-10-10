@@ -27,12 +27,12 @@ class GANs extends React.Component {
             <Col xs={8}>
             <Row>
             <Col>
-             <Card style={{ width: '18rem' }}>
+             <Card style={{ width: '11rem' }}>
               <Card.Img variant="top" src={whitecat} />
              </Card>
             </Col>
             <Col>
-              <Card style={{ width: '18rem' }}>
+              <Card style={{ width: '11rem' }}>
                <Card.Img variant="top" src={bluecatcar} />
                <Card.Body className="teal">
                  <Card.Title>It's me, the star of the show!</Card.Title>
@@ -40,7 +40,7 @@ class GANs extends React.Component {
               </Card>
             </Col>
             <Col>
-              <Card style={{ width: '18rem' }}>
+              <Card style={{ width: '11rem' }}>
                <Card.Img variant="top" src={airbrushcat} />
               </Card>
             </Col>
