@@ -4,6 +4,7 @@ import GANs from './GANs.js';
 import GenerativeArt from './GenerativeArt.js';
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import NavItem from 'react-bootstrap/Nav'
 
 class Weirdcore extends React.Component {
     constructor() {
@@ -37,18 +38,21 @@ class Weirdcore extends React.Component {
              <Col>
              </Col>
              <Col xs={8}>
-                <h3 className="App-subheader">
-                    <Button variant="link" onClick={() => this.hideComponent("showHideGenerative")}>
-                        Generative art
-                    </Button>
-                </h3>
-                { showHideGenerative && <GenerativeArt /> }
+               <h3 className="App-subheader">
+                   <NavItem href="https://cityofys.herokuapp.com/tourism" className="btn btn-link justify-content-center" as="a">An imaginary city</NavItem>
+               </h3>
                 <h3 className="App-subheader">
                     <Button variant="link" onClick={() => this.hideComponent("showHideGAN")}>
                         Fun with GANs
                     </Button>
                 </h3>
                 { showHideGAN && <GANs /> }
+                <h3 className="App-subheader">
+                    <Button variant="link" onClick={() => this.hideComponent("showHideGenerative")}>
+                        Generative art
+                    </Button>
+                </h3>
+                { showHideGenerative && <GenerativeArt /> }
             </Col>
             <Col>
             </Col>
