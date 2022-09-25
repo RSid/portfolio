@@ -70,7 +70,7 @@ class App extends Component {
    return (
      <div className="App">
        <Container fluid>
-        <Row className="padding-3p">
+        <Row className="padding-1p">
            <Col>
            </Col>
            <Col>
