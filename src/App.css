@@ -115,6 +115,11 @@
   border-bottom: 1px solid white;
 }
 
+.border-lightgreen {
+  border: 1px solid #C5EDAC;
+  border-radius: 10%;
+}
+
 .image-side-text {
     text-align: left;
     padding-top: 5%;
