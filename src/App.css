@@ -121,6 +121,12 @@
     padding-left: 4%;
 }
 
+.footer{
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
 .speech-bubble-right {
     position: relative;
     padding: 15px;

@@ -125,6 +125,11 @@ class App extends Component {
         </Row>
         <Row className="padding-5p-top-bottom">
         </Row>
+        <Row className="footer">
+          <Col md={{ span: 6, offset: 3 }}>
+            Find me on: <a href="https://github.com/RSid">Github</a> or <a href="https://twitter.com/AllaHoffman">Twitter</a>
+          </Col>
+        </Row>
        </Container>
      </div>
    );

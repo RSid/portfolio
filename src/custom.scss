@@ -2,11 +2,11 @@
 // Option A: Include all of Bootstrap
 // Your variable overrides
 $body-bg: #99C2A2; //#1A0F17; //dark purp
-$body-color: #DBFEB8;
+$body-color: white; //#DBFEB8; //light green
 $bg-primary: #C5EDAC;//#2C6E49;
 
 $theme-colors: (
-  "primary": #DBFEB8,//#1B9AAA,
+  "primary": white,//#DBFEB8 light green,//#1B9AAA,
   "danger": #ff4136
 );
 
