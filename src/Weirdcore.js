@@ -38,16 +38,16 @@ class Weirdcore extends React.Component {
              <Col>
              </Col>
              <Col xs={8}>
-               <h3 className="App-subheader">
+               <h3 className="App-subheader xanadu-grey">
                    <NavItem href="https://cityofys.herokuapp.com/tourism" className="btn btn-link justify-content-center" as="a">An imaginary city</NavItem>
                </h3>
-                <h3 className="App-subheader">
+                <h3 className="App-subheader xanadu-grey">
                     <Button variant="link" onClick={() => this.hideComponent("showHideGAN")}>
                         Fun with GANs
                     </Button>
                 </h3>
                 { showHideGAN && <GANs /> }
-                <h3 className="App-subheader">
+                <h3 className="App-subheader xanadu-grey">
                     <Button variant="link" onClick={() => this.hideComponent("showHideGenerative")}>
                         Generative art
                     </Button>

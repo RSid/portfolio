@@ -70,7 +70,7 @@ class App extends Component {
    return (
      <div className="App">
        <Container fluid>
-        <Row className="padding-1p">
+        <Row className="padding-3p">
            <Col>
            </Col>
            <Col>
@@ -80,11 +80,11 @@ class App extends Component {
            </Col>
         </Row>
 
-        <Row className="padding-3p">
+        <Row className="padding-1p-bottom">
           <Col>
           </Col>
           <Col xs={8}>
-          <div className="speech-bubble-right inline-block teal">
+          <div className="speech-bubble-right inline-block xanadu-grey">
            Hi. What do you want to see?
           </div>
            <Image roundedCircle src={logocat} className="logocat padding-5p" alt="logocat" />

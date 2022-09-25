@@ -14,7 +14,6 @@
 }
 
 .App-header {
-  background-color: #1A0F17;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -29,7 +28,7 @@
 }
 
 .App-subheader {
-  background-color: #F7B267;
+  background-color: #99C2A2;
 }
 
 .blue {
@@ -43,6 +42,10 @@
 
 .teal {
   background: #1B9AAA;
+}
+
+.xanadu-grey {
+  background: #7A918D;
 }
 
 /* spacing */
@@ -135,7 +138,7 @@
   left: 50%;
   border-width: 20px 0 0 20px;
   border-style: solid;
-  border-color: #1B9AAA transparent;
+  border-color: #7A918D transparent;
   display: block;
   width: 0;
 }
