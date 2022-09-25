@@ -83,7 +83,7 @@ class App extends Component {
         <Row className="padding-1p-bottom">
           <Col>
           </Col>
-          <Col xs={8}>
+          <Col xs={10}>
           <div className="speech-bubble-right inline-block xanadu-grey">
            Hi. What do you want to see?
           </div>
@@ -126,7 +126,7 @@ class App extends Component {
         <Row className="padding-5p-top-bottom">
         </Row>
         <Row className="footer">
-          <Col className="border-lightgreen" md={{ span: 6, offset: 3 }}>
+          <Col className="border-lightgreen" md={{ span: 6, offset: 3 }} xs={{ span: 8, offset: 2 }}>
             Find me on: <a href="https://github.com/RSid">Github</a> or <a href="https://twitter.com/AllaHoffman">Twitter</a>
           </Col>
         </Row>
