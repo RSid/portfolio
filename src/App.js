@@ -70,7 +70,7 @@ class App extends Component {
    return (
      <div className="App">
        <Container fluid>
-        <Row>
+        <Row className="padding-3p">
            <Col>
            </Col>
            <Col>
@@ -80,7 +80,7 @@ class App extends Component {
            </Col>
         </Row>
 
-        <Row>
+        <Row className="padding-3p">
           <Col>
           </Col>
           <Col xs={8}>
@@ -97,7 +97,7 @@ class App extends Component {
          { showWritingSection && <Col>
            <div>
             I want to see
-            <Button variant="link" onClick={() => this.hideComponent("showHideWritingSubsections")} className="standard-btn-overrides">
+            <Button variant="light" onClick={() => this.hideComponent("showHideWritingSubsections")} className="standard-btn-overrides">
              { showHideWritingSubsections? "something else" : "your creative writing!" }
            </Button>
            </div>
@@ -106,7 +106,7 @@ class App extends Component {
          { showWeirdcoreSection && <Col>
            <div>
             I want to see
-             <Button variant="link" onClick={() => this.hideComponent("showHideWeirdcoreSubsections")} className="standard-btn-overrides">
+             <Button variant="light" onClick={() => this.hideComponent("showHideWeirdcoreSubsections")} className="standard-btn-overrides">
               { showHideWeirdcoreSubsections? "something else" : "your weird art!" }
             </Button>
            </div>
@@ -116,26 +116,14 @@ class App extends Component {
          { showGamesSection && <Col>
            <div>
             I want to see
-            <Button variant="link" onClick={() => this.hideComponent("showHideGamesSubsections")} className="standard-btn-overrides">
+            <Button variant="light" onClick={() => this.hideComponent("showHideGamesSubsections")} className="standard-btn-overrides">
              { showHideGamesSubsections? "something else" : "your games!" }
            </Button>
             { showHideGamesSubsections && <Games /> }
            </div>
          </Col> }
         </Row>
-        <Row className="padding-1p-top-bottom">
-        </Row>
-        <Row>
-          <Col>
-          </Col>
-          <Col xs={6}>
-            <Button onClick={() => this.hideComponent("showHideFreelanceSubsections")} variant="primary">
-               { showHideFreelanceSubsections? "Show me some other things you do." : "Looking for a freelance web developer?" }
-            </Button>
-            {showHideFreelanceSubsections && <Freelance />}
-          </Col>
-          <Col>
-          </Col>
+        <Row className="padding-5p-top-bottom">
         </Row>
        </Container>
      </div>

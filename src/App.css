@@ -60,12 +60,21 @@
   padding-bottom: 1%;
 }
 
+.padding-5p-top-bottom {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
 .padding-10p-top {
     padding-top: 10%;
 }
 
 .padding-5p {
   padding: 5%;
+}
+
+.padding-3p {
+  padding: 3%;
 }
 
 .margin-left-1p {
@@ -95,8 +104,8 @@
 
 .standard-btn-overrides {
   vertical-align: baseline!important;
-  /*padding: 1%!important;
-  margin: 1%;*/
+  padding: 1%!important;
+  margin: 1%;
 }
 
 .border-bottom-white {
@@ -116,7 +125,7 @@
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
-    width: 15%;
+    width: 25%;
 }
 
 .speech-bubble-right:after {
