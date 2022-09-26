@@ -84,8 +84,8 @@ class App extends Component {
           <Col>
           </Col>
           <Col xs={10}>
-          <div className="speech-bubble-right inline-block xanadu-grey">
-           Hi. What do you want to see?
+          <div className="speech-bubble-right inline-block xanadu-grey font-size-1pt5">
+           🅷𝖆i. W🄷🄰t ᗪㄖ 🅨🅞🅤 🇼🇦🇳🇹 🆃🅾 s👁️ⓔ?
           </div>
            <Image roundedCircle src={logocat} className="logocat padding-5p" alt="logocat" />
           </Col>
@@ -126,8 +126,8 @@ class App extends Component {
         <Row className="padding-5p-top-bottom">
         </Row>
         <Row className="footer">
-          <Col className="border-lightgreen" md={{ span: 6, offset: 3 }} xs={{ span: 8, offset: 2 }}>
-            Find me on: <a href="https://github.com/RSid">Github</a> or <a href="https://twitter.com/AllaHoffman">Twitter</a>
+          <Col className="border-xanadu-grey" md={{ span: 4, offset: 4 }} xs={{ span: 8, offset: 2 }}>
+            Find me on: <a href="https://github.com/RSid">Github</a> or <a href="https://twitter.com/AllaHoffman">Twitter</a> 🔍
           </Col>
         </Row>
        </Container>

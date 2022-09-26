@@ -96,6 +96,10 @@
     max-width: 7rem;
 }
 
+.font-size-1pt5 {
+  font-size: 1.5em;
+}
+
 .text-align-left {
   text-align: left;
 }
@@ -115,8 +119,8 @@
   border-bottom: 1px solid white;
 }
 
-.border-lightgreen {
-  border: 1px solid #C5EDAC;
+.border-xanadu-grey {
+  border: 3px solid #7A918D;
   border-radius: 10%;
 }
 
@@ -146,7 +150,7 @@
   content: "";
   position: absolute;
   bottom: -20px;
-  left: 50%;
+  left: 80%;
   border-width: 20px 0 0 20px;
   border-style: solid;
   border-color: #7A918D transparent;
