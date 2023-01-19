@@ -12,6 +12,15 @@ class Writing extends React.Component {
         </Col>
         <Col>
           <Row>
+            Coffin Bell Journal:
+            <a href="https://coffinbell.com/housebroken/" target="_blank" rel="noopener noreferrer" className="margin-left-1p">
+                Housebroken
+            </a>,
+            <a href="https://coffinbell.com/two-wishes/" target="_blank" rel="noopener noreferrer" className="margin-left-1p">
+                Two Wishes
+            </a>
+          </Row>
+          <Row>
             The Kunlun Journal of Historical Fiction:
             <a href="https://issuu.com/kunlunjournal/docs/issue_1" target="_blank" rel="noopener noreferrer" className="margin-left-1p">
                 Paintings of Orchids
