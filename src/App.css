@@ -68,6 +68,10 @@
   padding-bottom: 5%;
 }
 
+.padding-5p-bottom {
+  padding-bottom: 5%;
+}
+
 .padding-10p-top {
     padding-top: 10%;
 }
@@ -134,6 +138,7 @@
   bottom: 0;
   width: 100%;
   text-align: center;
+  margin-bottom: 3px;
 }
 
 .speech-bubble-right {
