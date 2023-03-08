@@ -27,6 +27,12 @@ class Writing extends React.Component {
             </a>
           </Row>
           <Row>
+            Rejection Letters:
+              <a href="https://rejection-letters.com/2023/02/28/thank-you-for-your-interest-alla-hoffman/"  target="_blank" rel="noopener noreferrer" className="margin-left-1p">
+                Thank You For Your Interest
+              </a>
+          </Row>
+          <Row>
             One Forty Fiction:
             <a href="http://www.onefortyfiction.com/archives/processing" target="_blank" rel="noopener noreferrer" className="margin-left-1p">
                 Processing
