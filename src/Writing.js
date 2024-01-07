@@ -12,6 +12,12 @@ class Writing extends React.Component {
         </Col>
         <Col>
           <Row>
+            Orion's Beau:
+            <a href="https://www.orionsbeau.com/fantasy-quarterly/fall-2023/the-coastal-wildlife-refuge-for-lost-girls" target="_blank" rel="noopener noreferrer" className="margin-left-1p">
+                The Coastal Wildlife Refuge For Lost Girls
+            </a>
+          </Row>
+          <Row>
             Coffin Bell Journal:
             <a href="https://coffinbell.com/housebroken/" target="_blank" rel="noopener noreferrer" className="margin-left-1p">
                 Housebroken
